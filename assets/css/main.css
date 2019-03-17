@@ -99,7 +99,7 @@ a:hover, a:focus { text-decoration: none; color: #F3AF85; }
 @media (min-width: 768px) { .navbar { padding: 20px 0; border-bottom: 0; letter-spacing: 1px; background: 0 0; -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out; -moz-transition: background .5s ease-in-out,padding .5s ease-in-out; transition: background .5s ease-in-out,padding .5s ease-in-out; }
   .top-nav-collapse { padding: 0; background-color: #CA2B00; }
   .navbar-custom.top-nav-collapse { border-bottom: 1px solid rgba(255, 255, 255, 0.3); } }
-.intro { display: table; width: 100%; height: auto; padding: 100px 0; text-align: center; color: #fff; background: url("https://drustvo-evo.hr/stemlab/stemlab/assets/img/bcg/red_bg_intro.png") no-repeat bottom center scroll; background-color: #000; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover; }
+.intro { display: table; width: 100%; height: auto; padding: 100px 0; text-align: center; color: #fff; background: url("https://drustvo-evo.hr/stemlab/assets/img/bcg/red_bg_intro.png") no-repeat bottom center scroll; background-color: #000; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover; }
 
 .intro .intro-body { display: table-cell; vertical-align: middle; }
 
@@ -115,9 +115,9 @@ a:hover, a:focus { text-decoration: none; color: #F3AF85; }
 @media (max-width: 1200px) { .break-section2 { background: none; } }
 .content-section { padding-top: 50px; }
 
-.break-section { width: 100%; padding: 50px 0; color: #fff; background: url("https://drustvo-evo.hr/stemlab/stemlab/assets/img/bcg/red_bg_side.png") 50% 0 fixed; background-color: #000; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover; }
+.break-section { width: 100%; padding: 50px 0; color: #fff; background: url("https://drustvo-evo.hr/stemlab/assets/img/bcg/red_bg_side.png") 50% 0 fixed; background-color: #000; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover; }
 
-.break-section2 { width: 100%; padding: 50px 0; color: #000; background: url("https://drustvo-evo.hr/stemlab/stemlab/assets/img/bcg/red_bg_side_inverted.png") repeat-y scroll; -webkit-background-size: cover; -moz-background-size: cover; background-size: 100% auto; -o-background-size: cover; }
+.break-section2 { width: 100%; padding: 50px 0; color: #000; background: url("https://drustvo-evo.hr/stemlab/assets/img/bcg/red_bg_side_inverted.png") repeat-y scroll; -webkit-background-size: cover; -moz-background-size: cover; background-size: 100% auto; -o-background-size: cover; }
 
 .break-section1 { width: 100%; padding: 50px 0; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover; }
 
