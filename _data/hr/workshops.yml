@@ -1,0 +1,25 @@
+
+- name: Puferi – zašto su nam bitni?
+  description: Puferi su otopine određene pH vrijednosti sposobne oduprijeti se promjeni pH pri dodavanju male količine kiseline ili baze. U ovoj radionici ćete naučiti što su točno puferi, od čega se sastoje i naravno, zašto su nam bitni. Veliku važnost pridajemo puferskim sustavima u ljudskom tijelu jer nam oni omogućuju održavanje pH unutar normalnih vrijednosti koje su jako bitne za održavanje svih  procesa u tijelu. U radionici će biti naglasak na puferskim sustavima u tijelu te kako oni osiguravaju normalan pH te što se dogodi ako ti sustavi zakažu.
+  mentor: Mario Zelić
+  affiliation: Medicinski fakultet, Svečilište u Zagrebu
+  mentor_image: MarioZelic.png
+  status: active
+- name: Put proteina i zašto je lišće zeleno
+  description: U radionici će se obraditi kromatografske metode za razdvajanje proteina. Korišteni proteini bit će biljnog podrijetla. Kako su upravo proteini ti koji uzrokuju zelenu ili žutu boju lišća, radionica će se dotaknuti i priče o klorofilu, odnosno fotosintezi.
+  mentor: Snježana Kodba
+  affiliation: Prirodoslovno-matematički fakultet, Sveučilište u Zagrebu
+  mentor_image: SnjezanaKodba.png
+  status: active
+- name: Od skice do printanje 3D predmeta
+  description: Solidworks je vrlo moćan alat kojeg inžinjeri koriste za izradu 3D modela iz već nacrtanih 2D modela. Vrlo je koristan zbog lagane kolaboracije između zaposlenika unutar tvrtke te u njemu postoje raličiti načini ispitivanja dizajna. U radionici ćemo krenuti polako sa pravljenjem jednostavnih tijela, ali ćemo i pogledati kako naše 3D tijelo možemo isprintati 3D printerom. Naravno, na kraju radionice učenici će imati priliku napraviti bilo kakav model koji žele.
+  mentor: Stjepan Gotovac
+  affiliation: Fakultet strojarstva i brodogradnje, Sveučilište u Zagrebu 
+  mentor_image: StjepanGotovac.png
+  status: active
+- name: Evo Zelena škola
+  description: Cilj projekta je učenicima srednjih škola predstaviti sunčevu energiju, te naposljetku pretvoriti škole polaznika u tzv. ugljik neutralne (eng. carbon neutral) škole izradom fotonaponske elektrane koja će u potpunosti zadovoljiti njene energetske potrebe. EVO Zelena škola je iznimno interdisciplinarna, te uključuje područja fizike, biologije, kemije, ekonomije, elektrotehnike, računalnih znanosti, itd.
+  mentor: Luka Matijević
+  affiliation: Prirodoslovno-matematički fakultet, Sveučilište u Zagrebu
+  mentor_image: LukaMatijevic.png
+  status: active

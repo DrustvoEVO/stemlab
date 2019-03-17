@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+div.line {
+	background-color: $main-color;
+	height: 4px;
+	width: auto;
+	margin: -20px 200px 20px;
+}
+
+div.line2 {
+	background-color: $main-color;
+	height: 4px;
+	width: auto;
+	margin: 30px 200px 20px;
+}
+
+div.lineb {
+	background-color: $main-color;
+	height: 4px;
+	width: auto;
+	margin: 30px 0px 20px;
+}
+
+div.linev {
+	float: left;
+	background-color: $main-color;
+	height: 150px;
+	width: 4px;
+	margin: 10px 0px 10px;
+}

@@ -1,0 +1,144 @@
+---
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: default
+permalink: /
+lang: hr
+---
+
+<header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading"> </h1>
+                          <p></p>
+                          <h1 class="brand-heading1"> STEMLab</h1>
+                       
+                       <!-- <p class="intro-text">Summer School of Science is an international summer workshop established in 2001.</p> -->
+                        <a href="#mission" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- About Section11 -->
+    <section id="mission" class="content-section text-center">
+        <div class="break-section2">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Vizija</h2>
+                <div class="lineb"></div>
+                <p class="main2">Misija <strong>Društva za edukaciju van okvira</strong> (skraćeno &quot;Društvo EVO&quot;) je edukacija svih dobnih skupina u<span lang="hr" xml:lang="hr"> području kritičkog načina razmišljanja te</span><span lang="hr" xml:lang="hr"> promicanje slobode misli, mišljenja i izražavanja. </span>Članovi Društva okupljeni su oko zajedničkog iskustva rada u znanstvenom istraživanju i obrazovanju mladih, koji uz stremljenje vlastitoj profesionalnoj izvrsnosti njeguju i odgovornost prema zajednici radeći volonterski na prevladavanju postojećih društvenih izazova. Namjera Društva EVO je stvaranje mreže stručnjaka u Hrvatskoj i inozemstvu zainteresiranih da se kroz sinergiju postojećih i razvoj novih projekata aktivno suprostavljaju postojećim negativnim trendovima u društvu, a posebice obrazovanju. Projekti na kojima Društvo EVO trenutno radi usmjereni su ka poboljšanju znanstvene pismenosti, komunikacije i kulture.</p>
+
+                <p><img src={{ "/assets/img/bcg/EVO_background_plavi.png" | prepend: site.baseurl | prepend: site.url }} width="352" height="126" border="0" /></p>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="content-section text-center">
+        <div class="break-section2">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Radionice</h2>
+                <div class="lineb"></div>
+
+                <div class="active_projects">
+		    <table style="width: 100%">
+                    {% for project in site.data.workshops %}
+                        {% if project.status == "active" %}
+			<div class="workshop">
+                            <tr>
+				<td style="vertical-align: bottom">
+				    <p class="workshoptitle"><strong>{{ project.name }}</strong></p>
+			        </td>
+			    </tr>
+			    <tr>
+				<td style="vertical-align: top">
+					<!--<div style="width:60%">-->
+					<p class="workshopdesc">
+					    {{ project.description }}
+					</p>
+					<!--</div>-->
+				</td>
+				<td>
+				    <!--<div style="width:40%">-->
+ 				        <a href="">
+                                	    <img class="media-object" src={{ "/assets/img/people/" | absolute_url | append: project.mentor_image }} width="140" hspace="9" vspace="14" align="right" />
+                            	        </a>
+                        	
+					<!--<div class="media-body">-->
+                                	    <!--<p class="mentor"><strong>{{ project.mentor }}</strong><br />
+                                	    {{ project.affiliation }}<br/><br/>
+					    </p>-->
+					<!--</div>-->
+				    <!--</div>-->
+			        </td>
+			    </tr>
+			    <tr>
+				<td colspan="2">
+				    <p class="mentor"><strong>{{ project.mentor }}</strong><br />
+                                            {{ project.affiliation }}<br/><br/>
+                                    </p>
+				</td>
+			    </tr>
+
+                            <!--<p><strong>{{ project.name }}</strong></p>
+                            <p class="main2">
+                                {% if project.image %}
+                                    <img src={{ "/assets/img/project/" | absolute_url | append: project.image }} width="198" height="132" hspace="14" align="right" />
+                                {% endif %}
+                                {{ project.description }}
+                            </p>
+			    <div class="media">
+                        <div class="media-left">
+                            <a href="">
+                                <img class="media-object" src={{ "/assets/img/people/" | absolute_url | append: project.mentor_image }} width="155" hspace="9" vspace="14" align="left" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+				<p class="project"><strong>{{ project.mentor }}</strong><br />
+				{{ project.affiliation }}<br/><br/>
+			</div>-->
+                    	</div>
+                        {% endif %}  
+                    {% endfor %}
+		    </table>
+                </div>
+
+                <div class="line"></div>
+
+                
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section text-center">
+        <div class="break-section">
+            <div class="container">
+               <div class="col-lg-8 col-lg-offset-2">
+                <h2>Kontaktirajte nas!</h2>
+                <p><bold>Društvo EVO</bold><br>
+                    Crnojezerska 20<br>
+                    10000 Zagreb<br>
+                    Hrvatska
+                </p>
+
+                <!--<p><a class="orange" href="mailto:drustvo.evo@gmail.com">drustvo DOT evo AT gmail DOT com</a>
+                </p>-->
+
+                {% include social.html %}
+
+            </div>
+            </div>
+        </div>
+    </section>

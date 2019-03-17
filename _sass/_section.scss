@@ -1,0 +1,62 @@
+@media(max-width:1200px) {
+.break-section2 {
+	background: none;
+	}
+}
+
+.content-section {
+	padding-top: 50px;
+}
+
+.break-section {
+	width: 100%;
+	padding: 50px 0;
+	color: #fff;
+	background: url('#{$baseurl}/assets/img/bcg/blue_bg_side.png') 50% 0 fixed;
+	background-color: #000;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.break-section2 {
+	width: 100%;
+	padding: 50px 0;
+	color: #000;
+	background: url('#{$baseurl}/assets/img/bcg/blue_bg_side_inverted.png') repeat-y  scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: 100% auto;
+	-o-background-size: cover;
+	
+}
+
+.break-section1 {
+	width: 100%;
+	padding: 50px 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.break-section p.main2 a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.break-section p.main2 a {
+    text-decoration: none;
+    color: white;
+}
+
+@media(min-width:768px) {
+    .content-section {
+	padding-top: 50px;
+    }
+
+    .download-section {
+        padding: 100px 0;
+    }
+}

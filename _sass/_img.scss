@@ -1,0 +1,37 @@
+#pporganizers img {
+    margin-top: 5pt;
+    margin-right: 0pt;
+}
+
+#swapshop img {
+    margin-top: 3px;
+}
+
+#org img {
+    margin: 15px;
+}
+
+#projects img {
+    margin-top: 5pt;
+    margin-right: 0pt;
+}
+
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}
+
+::selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(255,255,255,.2);
+}

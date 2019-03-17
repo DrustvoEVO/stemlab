@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'claire_handbold';
+    src: url('#{$baseurl}/assets/fonts/claire_handbold/clairehandbold-webfont.eot');
+    src: url('#{$baseurl}/assets/fonts/claire_handbold/clairehandbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$baseurl}/assets/fonts/claire_handbold/clairehandbold-webfont.woff2') format('woff2'),
+         url('#{$baseurl}/assets/fonts/claire_handbold/clairehandbold-webfont.woff') format('woff'),
+         url('#{$baseurl}/assets/fonts/claire_handbold/clairehandbold-webfont.ttf') format('truetype'),
+         url('#{$baseurl}/assets/fonts/claire_handbold/clairehandbold-webfont.svg#claire_handbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'claire_hand';
+    src: url('#{$baseurl}/assets/fonts/ClaireHW/claire_hand-webfont.eot');
+    src: url('#{$baseurl}/assets/fonts/ClaireHW/claire_hand-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$baseurl}/assets/fonts/ClaireHW/claire_hand-webfont.woff') format('woff'),
+         url('#{$baseurl}/assets/fonts/ClaireHW/claire_hand-webfont.ttf') format('truetype'),
+         url('#{$baseurl}/assets/fonts/ClaireHW/claire_hand-webfont.svg#claire_hand') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'claire_hand_light';
+    src: url('#{$baseurl}/assets/fonts/clair/ClaireHandLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'claire_hand_regular';
+    src: url('#{$baseurl}/assets/fonts/clair/ClaireHandRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

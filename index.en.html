@@ -1,0 +1,165 @@
+---
+# You don't need to edit this file, it's empty on purpose.
+# Edit theme's home layout instead if you wanna make some changes
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: default
+permalink: /
+lang: en
+---
+
+<header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading"> </h1>
+                          <p></p>
+                          <h1 class="brand-heading1"> Society for <br>Out-of-Frame Education</h1>
+                       
+                       <!-- <p class="intro-text">Summer School of Science is an international summer workshop established in 2001.</p> -->
+                        <a href="#mission" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- About Section11 -->
+    <section id="mission" class="content-section text-center">
+        <div class="break-section2">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Mission</h2>
+                <div class="lineb"></div>
+                <p class="main2">Society for Out-of-Frame Education (in Croatian “Društvo za edukaciju van okvira”; short “EVO”) aims to educate people of all age groups in the critical way of thinking, and promote freedom of thought, opinion and expression. Members of the Society are gathered around the joint experience of doing scientific research and educating the youth. While aspiring to their own professional excellence, they advocate responsibility towards the entire community and work as volunteers to help overcome existent challenges within the society. Our goal is to create a network of experts in Croatia and abroad that are interested to actively counteract negative societal trends, especially in education, through synergy of current and development of new projects.</p>
+
+                <p><img src={{ "/assets/img/bcg/EVO_background_plavi_EN.jpg" | prepend: site.baseurl | prepend: site.url }} width="352" height="126" border="0" /></p>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="members" class="content-section text-center">
+        <div class="break-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Members</h2>
+                    <div class="lineb">
+                    </div>
+
+                    <div class="member_list">
+                        <table style="width:100%">
+                            <tr>
+                                <td valign="top">
+                                    <div class="people">
+                                        <h3>Active members</h3>
+
+                                        {% for member in site.data.members %}
+                                        <p>
+                                            <strong>{{ member.name }}{% if member.qualifications %},{% endif %} {{ member.qualifications }}</strong><br>
+                                            {{ member.affiliation }}
+                                        </p>
+
+                                        {% endfor %}
+                                    </div>
+                                </td>
+                                <td valign="top">
+                                    <div class="honorary">
+                                        <h3>Honourary members</h3>
+
+                                        {% for member in site.data.honorary_members %}
+                                        <p>
+                                            <strong>{{ member.name }}{% if member.qualifications %},{% endif %} {{ member.qualifications }}</strong><br>
+                                            {{ member.affiliation }}
+                                        </p>
+
+                                        {% endfor %}
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="content-section text-center">
+        <div class="break-section2">
+        <div class="container">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Projects</h2>
+                <div class="lineb"></div>
+
+                <h3>Current projects</h3>
+
+                <div class="active_projects">
+                    {% for project in site.data.projects %}
+                        {% if project.status == "active" %}
+                            <p><strong>{{ project.name }}</strong></p>
+                            <p class="main2">
+                                {% if project.image %}
+                                    <img src={{ "/assets/img/project/" | absolute_url | append: project.image }} width="198" height="132" hspace="14" align="right" />
+                                {% endif %}
+                                {{ project.description }}
+                            </p>    
+                            {% if project.link %}
+                                <div class="project_link">
+                                    <p>Link: <a href="{{ project.link }}"><strong>{{ project.name }}</strong></a></p>
+                                </div>
+                            {% endif %}
+                        {% endif %}  
+                    {% endfor %}
+                </div>
+
+                <div class="line"></div>
+                
+                <h3>Past projects</h3>
+
+                <div class="finished_projects">
+                    {% for project in site.data.projects %}
+                        {% if project.status == "finished" %}
+                            <p><strong>{{ project.name }}</strong></p>
+                            <p class="main2">
+                                {% if project.image %}
+                                    <img src={{ "/assets/img/project/" | absolute_url | append: project.image }} width="198" hspace="14" align="right" />
+                                {% endif %}
+                                {{ project.description }}
+                            </p>    
+                            {% if project.link %}
+                                <div class="project_link">
+                                    <p>Link: <a href="{{ project.link }}"><strong>{{ project.name }}</strong></a></p>
+                                </div>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section text-center">
+        <div class="break-section">
+            <div class="container">
+               <div class="col-lg-8 col-lg-offset-2">
+                <h2>Get in touch!</h2>
+                <p><bold>Društvo EVO</bold><br>
+                    Crnojezerska 20<br>
+                    HR-10000 Zagreb<br>
+                    Croatia
+                </p>
+
+                <!--<p><a class="orange" href="mailto:drustvo.evo@gmail.com">drustvo DOT evo AT gmail DOT com</a>
+                </p>-->
+
+                {% include social.html %}
+
+            </div>
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,8 @@
+- name: Mission
+  link: mission
+- name: Members
+  link: members
+- name: Projects
+  link: projects
+- name: Contact
+  link: contact 

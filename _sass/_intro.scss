@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url('#{$baseurl}/assets/img/bcg/blue_bg_intro.png') no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro .intro-body .brand-heading {
+	font-size: 40px;
+	font-family: "claire_handbold";
+}
+
+.intro .intro-body .brand-heading1 {
+	font-size: 70px;
+	font-family: "claire_handbold";
+}
+
+.intro .intro-body .intro-text {
+    font-size: 18px;
+}
+
+@media(min-width:768px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .intro .intro-body .brand-heading {
+	font-size: 90px;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 25px;
+    }
+}
